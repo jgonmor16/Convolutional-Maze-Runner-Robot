@@ -1,4 +1,5 @@
 from atar import *
+from encoder import *
 
 def main():
 
@@ -22,7 +23,9 @@ def main():
     path = astar(maze, start, end)
     print(path)
 
+    orders = encoder(path)
+    print(orders)
 
 if __name__ == '__main__':
     main()
-
+:
