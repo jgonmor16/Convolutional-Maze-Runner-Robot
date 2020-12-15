@@ -2,6 +2,7 @@ from atar import *
 
 def main():
 
+    #maze = pix2pix(img)
     maze = [[0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
             [0, 1, 0, 1, 1, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
@@ -15,6 +16,8 @@ def main():
 
     start = (0, 0)
     end = (7, 8)
+
+
 
     path = astar(maze, start, end)
     print(path)
