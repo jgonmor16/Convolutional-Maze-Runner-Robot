@@ -14,21 +14,27 @@ ending point, will:
 LIBRARIES REQUIERED
 -------------------
 A buch of python3 libraries are requiered to run this proyect.:
-* **OpenCV:** pip3 install opencv-python
-* **tqdm:** pip3 install tqdm
+* OpenCV:
+```
+pip3 install opencv-python
+```
+* tqdm:
+```
+pip3 install tqdm
+```
 
 SRC
 ---
-* main.py: Main file
-* conv.py: Convolutional Neural Network
-* atar.py: A* Pathfinding Algorithm
-* encoder.py: Encoder of  intructions
-* blue.py: Bluetooth comunication with Arduino
+* *main.py*: Main file
+* *conv.py*: Convolutional Neural Network
+* *atar.py*: A* Pathfinding Algorithm
+* *encoder.py*: Encoder of  intructions
+* *blue.py*: Bluetooth comunication with Arduino
 
 ### SRC/LIB
 Custom libreries requiered to run conv.py
-* conv\_model.py: Model functions
-* img\_data.py: Loading/labeling data functions
+* *conv\_model.py*: Model functions
+* *img\_data.py*: Loading/labeling data functions
 
 DOC
 ---
@@ -41,8 +47,8 @@ each neural network node.
 
 IMG
 ---
-* *.jpg: Images generated to test the proyect
-* ts_data.csv: Expected solution from images used to check the output of
+* *\*.jpg*: Images generated to test the proyect
+* *ts\_data.csv*: Expected solution from images used to check the output of
 neural network model
 
 README.md
