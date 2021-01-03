@@ -77,7 +77,7 @@ def main():
   timestring = datetime.datetime.fromtimestamp(start).strftime('%Y-%m-%d %H:%M:%S')
   Log('Started at %s' % timestring)
 
-  bd_addr = '98:D3:11:FC:42:16' #Change to our address
+  bd_addr = '00:14:03:05:F4:1B' #Change to our address
   port = 1
   sock = ConnectBluetoothRetry(bd_addr, port, 10)
 

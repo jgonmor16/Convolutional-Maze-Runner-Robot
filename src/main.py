@@ -1,6 +1,7 @@
 from atar import *
 from encoder import *
 from conv import *
+from blue import *
 
 def main():
 
@@ -17,6 +18,9 @@ def main():
     # Encoder
     orders = encoder(path)
     print(orders)
+
+    # Send orders via Bluetooth
+    blue(orders)
 
 if __name__ == '__main__':
     main()
