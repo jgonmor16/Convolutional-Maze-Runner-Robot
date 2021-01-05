@@ -8,10 +8,25 @@ def blue(orders):
     port = 1
     sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
     sock.connect((bd_addr,port))
+
     for data in orders:
-        sock.send('f'.encode())
-        t.sleep(5)
-        sock.send('s'.encode())
-        t.sleep(5)
+         print(data)
+         if data=='GD':
+             sock.send('r'.encode())
+             t.sleep(1)
+             sock.send('s'.encode())
+             t.sleep(0.5)
+         if data=='GI':
+             sock.send('l'.encode())
+             t.sleep(1)
+             sock.send('s'.encode())
+             t.sleep(0.5)
+         if data=='A1':
+             sock.send('f'.encode())
+             t.sleep(1)
+             sock.send('s'.encode())
+             t.sleep(0.5)
+
+
 
 
