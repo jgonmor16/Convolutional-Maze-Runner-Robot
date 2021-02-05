@@ -2,8 +2,7 @@ import sys
 import time as t
 import bluetooth
 
-def blue(orders):
-
+def blue_auto(orders):
     bd_addr = '00:14:03:05:F4:1B'
     port = 1
     sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
@@ -52,3 +51,9 @@ def blue(orders):
              sock.send('s'.encode())
              t.sleep(1)
 
+def blue_manual(order):
+    bd_addr = '00:14:03:05:F4:1B'
+    port = 1
+    sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
+    sock.connect((bd_addr,port))
+    sock.send(order.encode())

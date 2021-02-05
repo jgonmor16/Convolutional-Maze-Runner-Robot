@@ -29,7 +29,7 @@ def main():
             print(orders)
 
             # Send orders via Bluetooth
-            blue(orders)
+            blue_auto(orders)
 
             # Cambiamos a modo OFF
             
@@ -37,9 +37,9 @@ def main():
             # Division en coordenadas
             move = load("move")
             # Enviar por bluetoooth
-            blue(move)
+            blue_manual(move)
             # Comprobar OFF o AUTO
-            t.sleep(0.1)
+            t.sleep(1)
 
         t.sleep(0.3)
 

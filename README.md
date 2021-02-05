@@ -28,7 +28,7 @@ pip3 install tqdm
 ```
 pip3 install numpy
 ```
-* pybluez:
+* pybluez
 ```
 pip3 install pybluez
 ```
@@ -40,7 +40,17 @@ bluetooth device (connected to the arduino robot):
 sudo apt-get install bluetooth libbluetooth-dev
 ```
 
+### RaspAP Control Panel
+This modified configuration portal is used to change between AUTO and
+MANUAL modes, as well as to change directions during manual control.
 
+To install it:
+1. Go to <https://github.com/RaspAP/raspap-webgui#prerequisites> and
+perform the requiered steps to perform the quick installation.
+2. Copy modified files to their destination:
+```
+cp <proj dir>/html/i_dashboard.php /var/www/html/config
+```
 
 PROJECT DIRECTORY STRUCTURE
 ---------------------------
@@ -70,6 +80,16 @@ user.
 * _\*.jpg:_ Images generated to test the project. Naming: *fab.<n>.jpg*
 * *ts_data.csv:* Expected solution from images used to check the output of
 neural network model
+
+### html/
+* *i\_dashboard.php:* Modified RaspAP file to control robot (configuration)
+* *t\_dashboard.php:* Modified RaspAP file to control robot (display)
+
+#### html/proj
+* *auto:* Control file (Auto or Manual mode)
+* *coord:* Control file (Starting and Ending coords)
+* *move:* Control file (Manual Movement)
+* *on:* Control file (On/Off Switch)
 
 ### README.md
 This file
