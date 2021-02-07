@@ -80,7 +80,7 @@ of each neural network node.
 ### img/
 Please note that this folder is not included in repo. Must be provided by
 user.
-* _\*.jpg:_ Images generated to test the project. Naming: *fab.<n>.jpg*
+* _\*.jpg:_ Images generated to test the project. Naming: *fab.\<n\>.jpg*
 * *ts_data.csv:* Expected solution from images used to check the output of
 neural network model
 
