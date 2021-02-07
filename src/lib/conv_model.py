@@ -118,7 +118,7 @@ def Convolutional():
     iter_resut = down(iter_resut)
 
 
-  return Model(inputs=inputs, outputs=iter_resut)
+  return Model(inputs=inputs, outputs=iter_resut, name='Convolutional')
 
 ###############################################################################
 # CONVOLUTIONAL NETWORK MODEL

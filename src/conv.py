@@ -24,6 +24,9 @@ IMG_SIZE = 256
 sys.path.append(ROOT_PATH + '/src/lib')
 from conv_model import *
 
+### To prevent Unwanted Warnings ###
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 ###############################################################################
 # TRAINING AND RUNNING FUNCTIONS
 ###############################################################################
