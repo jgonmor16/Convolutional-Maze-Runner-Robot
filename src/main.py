@@ -39,7 +39,7 @@ def main():
             # Enviar por bluetoooth
             blue_manual(move)
             # Comprobar OFF o AUTO
-            t.sleep(1)
+            t.sleep(0.5)
 
         t.sleep(0.3)
 

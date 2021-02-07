@@ -10,7 +10,7 @@ def encoder(arr):
 
      mov[0]=arr[i+1][0]-arr[i][0]
      mov[1]=arr[i+1][1]-arr[i][1]
-     if mov[0]>0:
+     if mov[0]<0:
         if orient=='D':
           instr.append('GI')
 
@@ -22,9 +22,9 @@ def encoder(arr):
            instr.append('GD')
 
 
-        instr.append('A'+ str(mov[0]))
+        instr.append('A'+ str(-mov[0]))
         orient='AR'
-     if mov[0]<0:
+     if mov[0]>0:
         if orient=='D':
          instr.append('GD')
 
@@ -37,7 +37,7 @@ def encoder(arr):
            instr.append('GD')
 
         
-        instr.append('A'+ str(-mov[0]))
+        instr.append('A'+ str(mov[0]))
 
         orient='AB'
      if mov[1]>0:

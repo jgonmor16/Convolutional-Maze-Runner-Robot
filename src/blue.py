@@ -7,17 +7,17 @@ def blue_auto(orders):
     port = 1
     sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
     sock.connect((bd_addr,port))
-    distancia=10
+    distancia=27
     for data in orders:
          print(data)
          if data=='GD':
              sock.send('r'.encode())
-             t.sleep(0.45)
+             t.sleep(0.68)
              sock.send('s'.encode())
              t.sleep(1)
          if data=='GI':
              sock.send('l'.encode())
-             t.sleep(0.45)
+             t.sleep(0.68)
              sock.send('s'.encode())
              t.sleep(1)
          if data=='A1':
