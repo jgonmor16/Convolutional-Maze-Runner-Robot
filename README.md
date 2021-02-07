@@ -1,4 +1,4 @@
-# PROYECTO 
+# CONVOLUTIONAL MAZE RUNNER ROBOT 
 
 ABOUT
 -----
@@ -45,7 +45,8 @@ HC-05 device: <https://dev.to/ivanmoreno/how-to-connect-raspberry-pi-with-hc-05-
 
 ### RaspAP Control Panel
 This modified configuration portal is used to change between AUTO and
-MANUAL modes, as well as to change directions during manual control.
+MANUAL modes, to control directions during manual control and to set the
+starting and ending coordinates when AUTO mode is selected.
 
 To install RaspAP (<https://github.com/RaspAP/raspap-webgui>):
 1. Go to <https://github.com/RaspAP/raspap-webgui#prerequisites> and
@@ -53,7 +54,7 @@ perform the requiered steps to perform the quick installation.
 2. Copy modified files to their destination:
 ```
 cp <proj dir>/html/i_dashboard.php /var/www/html/includes/dashboard.php
-cp <proj dir>/html/i_dashboard.php /var/www/html/includes/dashboard.php
+cp <proj dir>/html/t_dashboard.php /var/www/html/templates/dashboard.php
 cp <proj dir>/html/proj /var/www/html/config/
 chown -R www-data:www-data /var/www/html/*
 ```
@@ -66,15 +67,12 @@ PROJECT DIRECTORY STRUCTURE
 * *conv.py:* Convolutional Neural Network
 * *atar.py:* A\* Pathfinding Algorithm
 * *encoder.py:* Intructions Encoder
-* *blue.py:* Bluetooth comunication with Robot
+* *blue.py:* Bluetooth communication with Robot
 
 #### src/lib/
-Custom libreries requiered to run conv.py
+Custom libreries requiered to run *conv.py*
 * *conv_model.py:* Model functions
 * *img_data.py:* Loading/labeling data functions
-
-### doc/
-Documentation of project.
 
 ### data/
 Checkpoints achieved by model (the later, the better) containg the wheights
