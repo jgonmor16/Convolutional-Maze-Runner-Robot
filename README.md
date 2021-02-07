@@ -40,6 +40,9 @@ bluetooth device (connected to the arduino robot):
 sudo apt-get install bluetooth libbluetooth-dev
 ```
 
+Please follow this tutorial to connect and pair the raspberry with the
+HC-05 device: <https://dev.to/ivanmoreno/how-to-connect-raspberry-pi-with-hc-05-bluetooth-module-arduino-programm-3h7a#pair-with-hc05-module>
+
 ### RaspAP Control Panel
 This modified configuration portal is used to change between AUTO and
 MANUAL modes, as well as to change directions during manual control.
