@@ -44,12 +44,15 @@ sudo apt-get install bluetooth libbluetooth-dev
 This modified configuration portal is used to change between AUTO and
 MANUAL modes, as well as to change directions during manual control.
 
-To install it:
+To install RaspAP (<https://github.com/RaspAP/raspap-webgui>):
 1. Go to <https://github.com/RaspAP/raspap-webgui#prerequisites> and
 perform the requiered steps to perform the quick installation.
 2. Copy modified files to their destination:
 ```
-cp <proj dir>/html/i_dashboard.php /var/www/html/config
+cp <proj dir>/html/i_dashboard.php /var/www/html/includes/dashboard.php
+cp <proj dir>/html/i_dashboard.php /var/www/html/includes/dashboard.php
+cp <proj dir>/html/proj /var/www/html/config/
+chown -R www-data:www-data /var/www/html/*
 ```
 
 PROJECT DIRECTORY STRUCTURE
