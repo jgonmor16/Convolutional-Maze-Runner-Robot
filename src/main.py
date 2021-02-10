@@ -12,7 +12,7 @@ def main():
     superdecorate("CONVOLUTIONAL MAZE RUNNER ROBOT")
     imp(None, on_old)
     imp(auto_old, None)
-    
+
     while(1):
         # Check if there is any change in mode or status
         on, auto = load("on"), load("auto")
@@ -35,7 +35,7 @@ def main():
             maze = conv(0)
             print("Walls detected:")
             print(maze)
-            
+
             # A* Pathfinding Algorithm
             decorate("Running A* Pathfinding Algorithm")
             start = (x0, y0)
@@ -50,7 +50,7 @@ def main():
 
             # Send orders via Bluetooth
             decorate("Sending orders to Robot")
-            #blue_auto(orders)
+            blue_auto(orders)
             print("Orders sent")
 
             # Change mode to OFF
@@ -62,7 +62,7 @@ def main():
             if (move != move_old):
                 imp(move, None)
                 # Send orther via bluetoooth
-                #blue_manual(move)
+                blue_manual(move)
             t.sleep(0.5)
             move_old = move
 

@@ -10,7 +10,7 @@ and an ending point, will:
 maze
 * Run the A* Pathfinding Algorithm to find the shortest route
 * Encode the resulting route as instructions
-* Send the instructuions via Bluetooth to the Arduino moduled attached to the
+* Send the instructions via Bluetooth to the Arduino moduled attached to the
 robot
 
 LIBRARIES REQUIERED
@@ -57,6 +57,7 @@ cp <proj dir>/html/i_dashboard.php /var/www/html/includes/dashboard.php
 cp <proj dir>/html/t_dashboard.php /var/www/html/templates/dashboard.php
 cp <proj dir>/html/proj /var/www/html/config/
 chown -R www-data:www-data /var/www/html/*
+chmod o+w /var/www/html/config/*
 ```
 
 PROJECT DIRECTORY STRUCTURE
